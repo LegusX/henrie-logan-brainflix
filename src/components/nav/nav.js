@@ -1,10 +1,11 @@
 import "./nav.scss";
 import Button from "../button/button";
+import Upload from "../../assets/icons/upload.svg";
 
 function Nav() {
 	return (
 		<nav>
-			<Button></Button>
+			<Button icon={Upload}>Upload</Button>
 		</nav>
 	);
 }

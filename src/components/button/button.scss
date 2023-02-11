@@ -1,0 +1,36 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.button {
+	background-color: $blue;
+	border-radius: 4px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 40px;
+	width: 100%;
+
+	cursor: pointer;
+	&:hover {
+		background-color: $darkblue;
+	}
+	@include tablet {
+		min-width: 150px;
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translate(50%, -50%);
+	}
+	&__text {
+		color: white;
+		text-transform: uppercase;
+		margin: 0;
+	}
+}

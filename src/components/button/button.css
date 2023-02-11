@@ -1,0 +1,32 @@
+.button {
+  background-color: #0095ff;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0065ad;
+}
+@media only screen and (min-width: 768px) {
+  .button {
+    min-width: 150px;
+  }
+}
+.button__icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.button__text {
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}/*# sourceMappingURL=button.css.map */
