@@ -8,7 +8,7 @@ class Video {
 		this.desc = details.description;
 		this.duration = details.duration;
 		this.likes = details.likes;
-		this.times = details.timestamp;
+		this.time = details.timestamp;
 		this.views = details.views;
 		this.url = details.video;
 	}

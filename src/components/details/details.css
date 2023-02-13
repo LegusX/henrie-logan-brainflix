@@ -1,1 +1,127 @@
-/*# sourceMappingURL=details.css.map */
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.details {
+  margin: 0 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .details {
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .details {
+    margin: 0 auto;
+    width: 64rem;
+  }
+}
+.details__title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .details__title {
+    margin-top: 3rem;
+    margin-bottom: 2.25rem;
+  }
+}
+.details__info {
+  display: flex;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+@media only screen and (min-width: 768px) {
+  .details__info {
+    border-top: 0;
+    padding: 0;
+  }
+}
+.details__info > div {
+  display: flex;
+  flex-direction: column;
+}
+.details__icon {
+  display: inline;
+  transform: translateY(10%);
+  margin-right: 0.5rem;
+}
+.details__text {
+  padding-bottom: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  color: #afafaf;
+}
+@media only screen and (min-width: 768px) {
+  .details__text {
+    padding-bottom: 2.25rem;
+  }
+}
+.details__channel {
+  padding-bottom: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .details__channel {
+    padding-bottom: 2.25rem;
+  }
+}
+.details__desc {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .details__desc {
+    margin-top: 3rem;
+    margin-bottom: 2.25rem;
+  }
+}/*# sourceMappingURL=details.css.map */

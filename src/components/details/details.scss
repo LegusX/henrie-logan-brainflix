@@ -1,2 +1,47 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/fonts" as *;
+
+.details {
+	@include margin;
+
+	&__title {
+		@include headline;
+	}
+
+	&__info {
+		display: flex;
+		padding-top: 1rem;
+		border-top: 1px solid $mercury;
+		border-bottom: 1px solid $mercury;
+
+		@include tablet {
+			border-top: 0;
+			padding: 0;
+		}
+
+		& > div {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__icon {
+		display: inline;
+		transform: translateY(10%);
+		margin-right: 0.5rem;
+	}
+	&__text {
+		@include comp;
+		width: fit-content;
+		display: inline-block;
+		color: $silver;
+	}
+	&__channel {
+		@include comp;
+		margin: 0;
+		font-weight: 600;
+	}
+	&__desc {
+		@include headline;
+	}
+}

@@ -22,7 +22,7 @@ function Main() {
 			<Player video={selected} />
 			<div className="main__container">
 				<div className="main__details">
-					<Details />
+					<Details video={selected} />
 				</div>
 				<div className="main__videos"></div>
 			</div>
