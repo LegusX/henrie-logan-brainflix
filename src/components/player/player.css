@@ -1,0 +1,13 @@
+.player {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.player__video {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .player__video {
+    height: 80vh;
+  }
+}/*# sourceMappingURL=player.css.map */

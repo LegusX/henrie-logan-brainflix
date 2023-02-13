@@ -1,7 +1,6 @@
 import "./icon.scss";
 
 function icon(props) {
-	console.log(props);
 	return (
 		<div
 			className={"user-icon " + props.className}
