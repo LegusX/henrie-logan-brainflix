@@ -16,7 +16,7 @@ class Details extends React.Component {
 
 		return (
 			<div className="details">
-				<h1 className="details__title">{this.state.video.title}</h1>
+				<h2 className="details__title">{this.state.video.title}</h2>
 				<div className="details__info">
 					<div>
 						<p className="details__channel">By {this.state.video.channel}</p>

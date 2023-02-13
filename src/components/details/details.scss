@@ -11,6 +11,8 @@
 
 	&__info {
 		display: flex;
+		justify-content: space-between;
+
 		padding-top: 1rem;
 		border-top: 1px solid $mercury;
 		border-bottom: 1px solid $mercury;
@@ -23,23 +25,43 @@
 		& > div {
 			display: flex;
 			flex-direction: column;
+			width: 50%;
+
+			@include tablet {
+				flex-direction: row;
+				width: revert;
+				gap: 2rem;
+				margin-bottom: 1rem;
+			}
 		}
 	}
 	&__icon {
-		display: inline;
-		transform: translateY(10%);
 		margin-right: 0.5rem;
+		float: left;
+
+		@include tablet {
+			transform: translateY(20%);
+		}
 	}
 	&__text {
 		@include comp;
 		width: fit-content;
 		display: inline-block;
 		color: $silver;
+
+		@include tablet {
+			padding-bottom: 0;
+			font-size: 0.8rem;
+		}
 	}
 	&__channel {
 		@include comp;
 		margin: 0;
 		font-weight: 600;
+
+		@include tablet {
+			padding-bottom: 0;
+		}
 	}
 	&__desc {
 		@include headline;
