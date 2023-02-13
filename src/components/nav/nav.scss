@@ -45,9 +45,9 @@
 			margin: 0;
 		}
 
-		& > img {
+		& > a > img {
 			height: 25px;
-			width: 120px;
+			aspect-ratio: 5;
 		}
 	}
 
