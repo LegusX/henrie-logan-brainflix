@@ -5,9 +5,27 @@
 }
 .player__video {
   width: 100%;
+  box-sizing: border-box;
 }
 @media only screen and (min-width: 768px) {
   .player__video {
-    height: 80vh;
+    padding: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .player__video {
+    margin: 0 1rem;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-width: 768px) {
+  .player__video {
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-width: 1280px) {
+  .player__video {
+    margin: 0 auto;
+    width: 64rem;
   }
 }/*# sourceMappingURL=player.css.map */
