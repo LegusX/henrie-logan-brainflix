@@ -1,6 +1,7 @@
 import "./main.scss";
 
 import Player from "../player/player";
+import Details from "../details/details";
 import Video from "../../video";
 
 import videosData from "../../data/videos.json";
@@ -19,6 +20,12 @@ function Main() {
 	return (
 		<div className="main">
 			<Player video={selected} />
+			<div className="main__container">
+				<div className="main__details">
+					<Details />
+				</div>
+				<div className="main__videos"></div>
+			</div>
 		</div>
 	);
 }
