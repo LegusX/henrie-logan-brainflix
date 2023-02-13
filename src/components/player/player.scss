@@ -11,8 +11,15 @@
 
 	&__video {
 		width: 100%;
+		box-sizing: border-box;
+
 		@include tablet {
-			height: 80vh;
+			padding: 0 2.25rem;
+		}
+
+		@include desktop {
+			@include margin;
+			padding: 0;
 		}
 	}
 }
