@@ -1,0 +1,12 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.user-icon {
+	background-color: $mercury;
+	background-position: center;
+	background-size: cover;
+
+	border-radius: 100%;
+	min-width: 48px;
+	height: 48px;
+}

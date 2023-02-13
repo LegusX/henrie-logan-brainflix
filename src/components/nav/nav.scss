@@ -1,0 +1,60 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.nav {
+	@include margin;
+	@include comp;
+
+	@include tablet {
+		padding: 1rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__search {
+		@include comp;
+		display: flex;
+		gap: 1rem;
+
+		@include tablet {
+			padding: 0;
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		@include tablet {
+			display: none;
+		}
+		&--tablet {
+			display: none;
+			@include tablet {
+				display: inline-block;
+			}
+		}
+	}
+
+	&__logo {
+		@include headline;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include tablet {
+			margin: 0;
+		}
+
+		& > img {
+			height: 25px;
+			width: 120px;
+		}
+	}
+
+	&__right {
+		@include tablet {
+			display: flex;
+			gap: 2rem;
+		}
+	}
+}

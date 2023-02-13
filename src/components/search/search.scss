@@ -1,0 +1,37 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.search {
+	min-height: 40px;
+
+	border-radius: 4px;
+	border: 1px solid $mercury;
+	padding: 0 12px;
+
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	gap: 16px;
+
+	@include tablet {
+		width: 20vw;
+	}
+
+	&__icon {
+		height: 1.25rem;
+	}
+	&__input {
+		padding: 0;
+		border: none;
+		width: 80%;
+
+		&::placeholder {
+			opacity: 100;
+			font-size: 0.9rem;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
