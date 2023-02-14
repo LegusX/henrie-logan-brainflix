@@ -8,15 +8,18 @@ class Player extends React.Component {
 		this.state = {
 			video: props.video,
 		};
+		this.video = props.video;
 	}
+
 	render() {
+		console.log("player");
 		return (
-			<div className="player">
+			<div className="player" key={this.video.id}>
 				<div className="player__controls">
 					<video
 						className="player__video"
-						src={this.state.video.url}
-						poster={this.state.video.image}
+						src={this.video.url}
+						poster={this.video.image}
 					></video>
 				</div>
 			</div>

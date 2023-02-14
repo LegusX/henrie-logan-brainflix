@@ -1,0 +1,70 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/fonts" as *;
+
+.videos {
+	@include margin;
+
+	border-top: 1px solid $mercury;
+
+	@include desktop {
+		border-top: none;
+		border-left: 1px solid $mercury;
+		padding-left: 1.5rem;
+		box-sizing: border-box;
+		width: unset;
+	}
+
+	&__video {
+		cursor: pointer;
+		user-select: none;
+
+		margin: 1.5rem 0;
+		width: 100%;
+		max-height: 5rem;
+
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		@include desktop {
+			flex-shrink: 2;
+		}
+	}
+
+	&__header {
+		@include headline;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: $silver;
+	}
+
+	&__thumbnail {
+		aspect-ratio: 16/9;
+		max-width: 35%;
+		max-height: 4em;
+		flex-shrink: 0;
+		background-color: $mercury;
+		border-radius: 4px;
+		overflow: hidden;
+
+		& > img {
+			width: 100%;
+		}
+	}
+	&__text {
+		max-height: 4em;
+		height: 4em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		min-width: 0;
+	}
+	&__title {
+		font-weight: 600;
+	}
+	&__channel {
+		min-width: 0;
+	}
+}

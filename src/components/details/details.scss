@@ -3,13 +3,13 @@
 @use "../../styles/partials/fonts" as *;
 
 .details {
-	@include margin;
-
 	&__title {
+		@include mini-margin;
 		@include headline;
 	}
 
 	&__info {
+		@include mini-margin;
 		display: flex;
 		justify-content: space-between;
 
@@ -32,6 +32,10 @@
 				width: revert;
 				gap: 2rem;
 				margin-bottom: 1rem;
+			}
+
+			@include desktop {
+				margin-right: 1rem;
 			}
 		}
 	}
@@ -64,6 +68,10 @@
 		}
 	}
 	&__desc {
+		@include mini-margin;
 		@include headline;
+		@include desktop {
+			margin-right: 1rem;
+		}
 	}
 }

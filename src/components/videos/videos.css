@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.videos {
+  margin: 0 1rem;
+  border-top: 1px solid #e1e1e1;
+}
+@media only screen and (min-width: 768px) {
+  .videos {
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .videos {
+    margin: 0 auto;
+    width: 64rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .videos {
+    border-top: none;
+    border-left: 1px solid #e1e1e1;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    width: unset;
+  }
+}
+.videos__video {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media only screen and (min-width: 1280px) {
+  .videos__video {
+    flex-shrink: 2;
+  }
+}
+.videos__header {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #afafaf;
+}
+@media only screen and (min-width: 768px) {
+  .videos__header {
+    margin-top: 3rem;
+    margin-bottom: 2.25rem;
+  }
+}
+.videos__thumbnail {
+  aspect-ratio: 16/9;
+  max-width: 35%;
+  max-height: 4em;
+  flex-shrink: 0;
+  background-color: #e1e1e1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.videos__thumbnail > img {
+  width: 100%;
+}
+.videos__text {
+  max-height: 4em;
+  height: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+.videos__title {
+  font-weight: 600;
+}
+.videos__channel {
+  min-width: 0;
+}/*# sourceMappingURL=videos.css.map */

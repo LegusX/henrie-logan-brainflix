@@ -48,23 +48,15 @@ p {
     font-weight: 400;
   }
 }
-.details {
-  margin: 0 1rem;
-}
-@media only screen and (min-width: 768px) {
-  .details {
-    margin: 0 2.25rem;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .details {
-    margin: 0 auto;
-    width: 64rem;
-  }
-}
 .details__title {
+  margin: 0 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .details__title {
+    margin: 0 2.25rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .details__title {
@@ -73,11 +65,17 @@ p {
   }
 }
 .details__info {
+  margin: 0 1rem;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+}
+@media only screen and (min-width: 768px) {
+  .details__info {
+    margin: 0 2.25rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .details__info {
@@ -96,6 +94,11 @@ p {
     width: revert;
     gap: 2rem;
     margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .details__info > div {
+    margin-right: 1rem;
   }
 }
 .details__icon {
@@ -141,12 +144,23 @@ p {
   }
 }
 .details__desc {
+  margin: 0 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .details__desc {
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .details__desc {
     margin-top: 3rem;
     margin-bottom: 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .details__desc {
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=details.css.map */

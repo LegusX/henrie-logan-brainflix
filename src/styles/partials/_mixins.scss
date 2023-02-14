@@ -23,6 +23,14 @@
 	}
 }
 
+@mixin mini-margin {
+	margin: 0 1rem;
+
+	@include tablet {
+		margin: 0 2.25rem;
+	}
+}
+
 @mixin headline {
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;

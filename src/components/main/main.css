@@ -1,1 +1,26 @@
-/*# sourceMappingURL=main.css.map */
+@media only screen and (min-width: 1280px) {
+  .main__container {
+    margin: 0 1rem;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-width: 768px) {
+  .main__container {
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-width: 1280px) {
+  .main__container {
+    margin: 0 auto;
+    width: 64rem;
+  }
+}
+.main__details {
+  flex: 2;
+  flex-shrink: 0;
+  flex-basis: 65%;
+}
+.main__videos {
+  flex-shrink: 1;
+  flex-basis: 35%;
+}/*# sourceMappingURL=main.css.map */
