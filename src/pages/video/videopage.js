@@ -17,8 +17,6 @@ export default function VideoPage() {
 
 	useEffect(() => {
 		getVideos().then((data) => {
-			console.log(data);
-
 			//if there isn't an id paramater, then this is for the home page and we should use the first video in the array
 			//if there is, then search the videos array for a matching video and use that.
 			if (typeof id === "undefined") {
@@ -39,7 +37,6 @@ export default function VideoPage() {
 			setDetails(data);
 		});
 	}, [id]);
-	// console.log(videos);
 
 	if (videos.length < 1) return <div>Loading...</div>;
 

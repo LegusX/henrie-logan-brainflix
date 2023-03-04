@@ -15,10 +15,9 @@ export default function Videos({ videos }) {
 }
 
 function VideoItem(video) {
-	console.log(video.id);
 	return (
-		<Link to={`/videos/${video.id}`}>
-			<div className="videos__video" key={video.id} data-id={video.id}>
+		<Link to={`/videos/${video.id}`} key={video.id}>
+			<div className="videos__video" data-id={video.id}>
 				<div className="videos__thumbnail">
 					<img src={video.image} alt="" />
 				</div>

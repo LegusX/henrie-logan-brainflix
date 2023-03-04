@@ -21,7 +21,6 @@ export async function getVideos() {
 }
 
 export async function getDetails(id) {
-	console.log(id);
 	try {
 		const res = await axios.get(BASEURL + "/videos/" + id, CONFIG);
 		//return more detailed error message if the error code is 404 or 400
