@@ -1,10 +1,10 @@
-import "./main.scss";
+import "./videopage.scss";
 
 import { useState } from "react";
-import Player from "../player/player";
-import Details from "../details/details";
+import Player from "../../components/player/player";
+import Details from "../../components/details/details";
 import Video from "../../video";
-import Videos from "../videos/videos";
+import Videos from "../../components/videos/videos";
 
 import videosData from "../../data/videos.json";
 import detailsData from "../../data/video-details.json";
@@ -76,7 +76,7 @@ export default function Main() {
 			<Player id={selectedVideo.id} videos={videos} />
 			<div className="main__container">
 				<div className="main__details">
-					<Details id={selectedVideo.id} videos={videos} />
+					{/* <Details id={selectedVideo.id} videos={videos} /> */}
 					{/* <Comments/> */}
 				</div>
 				<div className="main__videos">
