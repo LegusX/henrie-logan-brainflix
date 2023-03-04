@@ -1,92 +1,64 @@
 import "./videopage.scss";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getDetails } from "../../api";
+import { useParams } from "react-router-dom";
+import { getVideos } from "../../api";
+
 import Player from "../../components/player/player";
 import Details from "../../components/details/details";
-import Video from "../../video";
 import Videos from "../../components/videos/videos";
 
-import videosData from "../../data/videos.json";
-import detailsData from "../../data/video-details.json";
+export default function VideoPage() {
+	const { id } = useParams();
+	const [video, setVideo] = useState(0);
+	const [details, setDetails] = useState(0);
+	const [videos, setVideos] = useState([]);
 
-// class Main extends React.Component {
-// 	constructor(props) {
-// 		super(props);
+	useEffect(() => {
+		getVideos().then((data) => {
+			console.log(data);
 
-// 		this.videos = videosData.map((video) => {
-// 			//Go through detailsData manually because there is no guarantee the indexes will line up with videosData
-// 			for (let i = 0; i < detailsData.length; i++) {
-// 				let detail = detailsData[i];
-// 				if (detail.id === video.id) return new Video(video, detail);
-// 			}
-// 		});
+			//if there isn't an id paramater, then this is for the home page and we should use the first video in the array
+			//if there is, then search the videos array for a matching video and use that.
+			if (typeof id === "undefined") {
+				setVideo(data[0]);
+			} else {
+				data.forEach((video) => {
+					if (video.id === id) setVideo(video);
+				});
+			}
 
-// 		this.state = {
-// 			selected: this.videos[0],
-// 		};
-// 	}
+			setVideos(data);
+		});
+	}, [id]);
 
-// 	changeVideo(video) {
-// 		console.log(video);
-// 		console.log(this.state.selected);
-// 		let start = Date.now();
-// 		this.setState(
-// 			{
-// 				selected: { ...video },
-// 			},
-// 			() => console.log(Date.now() - start)
-// 		);
-// 	}
+	useEffect(() => {
+		if (video === 0) return;
+		getDetails(video.id).then((data) => {
+			setDetails(data);
+		});
+	}, [id]);
+	// console.log(videos);
 
-// 	render() {
-// 		return (
-// 			<div className="main">
-// 				<Player video={this.state.selected} />
-// 				<div className="main__container">
-// 					<div className="main__details">
-// 						<Details video={this.state.selected} />
-// 						{/* <Comments/> */}
-// 					</div>
-// 					<div className="main__videos">
-// 						<Videos
-// 							selected={this.state.selected}
-// 							videos={this.videos}
-// 							changeVideo={(video) => this.setState({ video: { ...video } })}
-// 						/>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		);
-// 	}
-// }
+	if (videos.length < 1) return <div>Loading...</div>;
 
-export default function Main() {
-	const videos = videosData.map((video) => {
-		//Go through detailsData manually because there is no guarantee the indexes will line up with videosData
-		for (let i = 0; i < detailsData.length; i++) {
-			let detail = detailsData[i];
-			if (detail.id === video.id) return new Video(video, detail);
-		}
+	//remove current video from the list
+	const filteredVideos = videos.filter((video) => {
+		if (video.id !== id) return video;
+		return false;
 	});
-
-	const [selectedVideo, selectVideo] = useState(videos[0]);
 
 	return (
 		<div className="main">
-			<Player id={selectedVideo.id} videos={videos} />
+			<Player video={video} id={id} />
 			<div className="main__container">
 				<div className="main__details">
-					{/* <Details id={selectedVideo.id} videos={videos} /> */}
+					<Details details={details} />
 					{/* <Comments/> */}
 				</div>
 				<div className="main__videos">
-					<Videos
-						id={selectedVideo.id}
-						videos={videos}
-						changeVideo={(video) => {
-							selectVideo({ ...video });
-						}}
-					/>
+					<Videos videos={filteredVideos} />
 				</div>
 			</div>
 		</div>

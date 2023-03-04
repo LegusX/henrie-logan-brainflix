@@ -1,7 +1,4 @@
 import "./player.scss";
-
-import { useState } from "react";
-
 // class Player extends React.Component {
 // 	constructor(props) {
 // 		super(props);
@@ -26,12 +23,8 @@ import { useState } from "react";
 // 	}
 // }
 
-export default function Player({ id, videos }) {
+export default function Player({ video, id }) {
 	// const [video] = useState(props.video);
-	let video = {};
-	videos.forEach((vid) => {
-		if (vid.id === id) video = vid;
-	});
 
 	return (
 		<div className="player" key={id}>
