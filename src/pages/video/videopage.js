@@ -42,13 +42,14 @@ export default function VideoPage() {
 		});
 	}, [id]);
 
-	if (videos.length < 1) return <div>Loading...</div>;
-
 	//remove current video from the list
 	const filteredVideos = videos.filter((video) => {
 		if (video.id !== id) return video;
 		return false;
 	});
+
+	//if we don't have an id to filter out, then just remove the first one.
+	if (typeof id === "undefined") filteredVideos.shift();
 
 	return (
 		<div className="main">
