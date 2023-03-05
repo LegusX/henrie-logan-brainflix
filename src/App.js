@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Nav></Nav>
+				<Nav />
 				<Routes>
 					<Route path="/" element={<VideoPage />} />
 					<Route path="/videos/:id" element={<VideoPage />} />

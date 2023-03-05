@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./nav.scss";
 import Button from "../button/button";
 import Search from "../search/search";
@@ -11,16 +13,18 @@ function Nav() {
 	return (
 		<nav className="nav">
 			<div className="nav__logo">
-				<a href="#">
+				<Link to={"/"}>
 					<img src={Logo}></img>
-				</a>
+				</Link>
 			</div>
 			<div className="nav__right">
 				<div className="nav__search">
 					<Search></Search>
 					<Icon src={DefaultIcon} className="nav__icon"></Icon>
 				</div>
-				<Button icon={Upload}>Upload</Button>
+				<Link to={"/upload"}>
+					<Button icon={Upload}>Upload</Button>
+				</Link>
 				<Icon src={DefaultIcon} className="nav__icon--tablet"></Icon>
 			</div>
 		</nav>
