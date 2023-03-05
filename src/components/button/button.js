@@ -1,10 +1,10 @@
 import "./button.scss";
 
-function Button(props) {
+function Button({ icon, children }) {
 	return (
 		<div className="button">
-			<img src={props.icon} className="button__icon" />
-			<p className="button__text">{props.children}</p>
+			<img src={icon} className="button__icon" />
+			<p className="button__text">{children}</p>
 		</div>
 	);
 }

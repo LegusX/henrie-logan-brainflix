@@ -4,4 +4,49 @@
 
 .comments {
 	@include mini-margin;
+	&__img {
+		width: 2.25rem;
+		height: 2.25rem;
+		border-radius: 50%;
+		aspect-ratio: 1;
+		background-color: $mercury;
+		background-image: url("/assets/images/Mohan-muruge.jpg");
+		background-size: cover;
+
+		transform: translateY(-10%);
+
+		@include tablet {
+			min-width: 3rem;
+			height: 3rem;
+		}
+	}
+
+	&__join {
+		display: flex;
+	}
+	&__left {
+		flex-shrink: 2;
+	}
+	&__right {
+	}
+	&__input {
+		@include comp;
+		border: $mercury 1px solid;
+		border-radius: 0.25rem;
+
+		box-sizing: border-box;
+		padding: 0.75rem;
+		margin-top: 0.25rem;
+		margin-bottom: 1rem;
+		width: 100%;
+		max-width: 100%;
+
+		@include tablet {
+			padding: 1rem;
+		}
+
+		// &--error {
+		// 	border-color: $error;
+		// }
+	}
 }
