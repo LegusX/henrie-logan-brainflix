@@ -16,25 +16,29 @@ export default function VideoPage() {
 	const [videos, setVideos] = useState([]);
 
 	useEffect(() => {
-		getVideos().then((data) => {
+		getVideos().then((videosData) => {
 			//if there isn't an id paramater, then this is for the home page and we should use the first video in the array
 			//if there is, then search the videos array for a matching video and use that.
+			//afterwards, get the details for the chosen video
 			if (typeof id === "undefined") {
-				setVideo(data[0]);
+				setVideo(videosData[0]);
+
+				getDetails(videosData[0].id).then((detailsData) => {
+					setDetails(detailsData);
+				});
 			} else {
-				data.forEach((video) => {
-					if (video.id === id) setVideo(video);
+				videosData.forEach((video) => {
+					if (video.id === id) {
+						setVideo(video);
+
+						getDetails(video.id).then((detailsData) => {
+							setDetails(detailsData);
+						});
+					}
 				});
 			}
 
-			setVideos(data);
-		});
-	}, [id]);
-
-	useEffect(() => {
-		if (video === 0) return;
-		getDetails(video.id).then((data) => {
-			setDetails(data);
+			setVideos(videosData);
 		});
 	}, [id]);
 
