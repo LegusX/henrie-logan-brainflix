@@ -24,10 +24,11 @@
 }
 
 @mixin mini-margin {
-	margin: 0 1rem;
+	padding: 0 1rem;
 
 	@include tablet {
-		margin: 0 2.25rem;
+		// padding: 0 2.25rem;
+		padding: 0;
 	}
 }
 

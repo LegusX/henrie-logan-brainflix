@@ -3,11 +3,10 @@
 @use "../../../styles/partials/fonts" as *;
 
 .comment {
-	// @include margin;
-	// margin: 0 auto;
+	border-bottom: 1px solid $mercury;
 	display: flex;
 	gap: 16px;
-	margin-bottom: 16px;
+	padding: 2rem 0;
 	width: 100%;
 	min-height: 5rem;
 	&__img {
@@ -28,6 +27,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
+		padding-right: 1rem;
 	}
 
 	&__name {

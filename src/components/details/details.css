@@ -49,13 +49,13 @@ p {
   }
 }
 .details__title {
-  margin: 0 1rem;
+  padding: 0 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .details__title {
-    margin: 0 2.25rem;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -65,7 +65,7 @@ p {
   }
 }
 .details__info {
-  margin: 0 1rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
@@ -74,7 +74,7 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .details__info {
-    margin: 0 2.25rem;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -144,13 +144,13 @@ p {
   }
 }
 .details__desc {
-  margin: 0 1rem;
+  padding: 0 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .details__desc {
-    margin: 0 2.25rem;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 768px) {
