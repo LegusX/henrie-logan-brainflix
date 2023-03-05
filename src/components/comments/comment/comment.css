@@ -48,11 +48,41 @@ p {
     font-weight: 400;
   }
 }
-.comments {
-  margin: 0 1rem;
+.comment {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  min-height: 5rem;
+}
+.comment__img {
+  min-width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  transform: translateY(-10%);
 }
 @media only screen and (min-width: 768px) {
-  .comments {
-    margin: 0 2.25rem;
+  .comment__img {
+    min-width: 3rem;
+    height: 3rem;
   }
-}/*# sourceMappingURL=comments.css.map */
+}
+.comment__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.comment__name {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.comment__time {
+  color: #afafaf;
+  display: inline-block;
+  width: 6rem;
+  text-align: right;
+}
+.comment__inner {
+  width: 100%;
+}/*# sourceMappingURL=comment.css.map */

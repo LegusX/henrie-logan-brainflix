@@ -6,7 +6,7 @@ import views from "../../assets/icons/views.svg";
 import like from "../../assets/icons/likes.svg";
 
 export default function Details({ details }) {
-	const time = new Date(details.time).toLocaleDateString();
+	const time = new Date(details.timestamp).toLocaleDateString();
 	return (
 		<div className="details">
 			<h2 className="details__title">{details.title}</h2>

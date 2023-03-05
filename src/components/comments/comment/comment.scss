@@ -1,0 +1,48 @@
+@use "../../../styles/partials/colors.scss" as *;
+@use "../../../styles/partials/mixins.scss" as *;
+@use "../../../styles/partials/fonts" as *;
+
+.comment {
+	// @include margin;
+	// margin: 0 auto;
+	display: flex;
+	gap: 16px;
+	margin-bottom: 16px;
+	width: 100%;
+	min-height: 5rem;
+	&__img {
+		min-width: 2.25rem;
+		height: 2.25rem;
+		border-radius: 50%;
+		background-color: $mercury;
+
+		transform: translateY(-10%);
+
+		@include tablet {
+			min-width: 3rem;
+			height: 3rem;
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	&__name {
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+
+	&__time {
+		color: $silver;
+		display: inline-block;
+		width: 6rem;
+		text-align: right;
+	}
+
+	&__inner {
+		width: 100%;
+	}
+}

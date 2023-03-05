@@ -8,6 +8,7 @@ import { getVideos } from "../../api";
 import Player from "../../components/player/player";
 import Details from "../../components/details/details";
 import Videos from "../../components/videos/videos";
+import Comments from "../../components/comments/comments";
 
 export default function VideoPage() {
 	const { id } = useParams();
@@ -50,14 +51,13 @@ export default function VideoPage() {
 
 	//if we don't have an id to filter out, then just remove the first one.
 	if (typeof id === "undefined") filteredVideos.shift();
-
 	return (
 		<div className="main">
 			<Player video={video} id={id} />
 			<div className="main__container">
 				<div className="main__details">
 					<Details details={details} />
-					{/* <Comments/> */}
+					<Comments comments={details.comments} />
 				</div>
 				<div className="main__videos">
 					<Videos videos={filteredVideos} />
