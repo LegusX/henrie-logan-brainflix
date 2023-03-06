@@ -26,7 +26,7 @@ export default function Details({ details }) {
 					</div>
 				</div>
 			</div>
-			<p className="details__desc">{details.desc}</p>
+			<p className="details__desc">{details.description}</p>
 		</div>
 	);
 }

@@ -1,16 +1,14 @@
----------
-Required
----------
+---
+## Required
 
 fix stupid black bar under video player
 fix wrong resolution on video player
-fix/add in video description??
 add upload page
-fix border-bottom not reaching sidebar
 convert all px to rem
+find out why getting a warning about unique keys on the comments
+---
 
----------
-Going further
----------
+## Going further
+
 comment submission
 comment deletion
