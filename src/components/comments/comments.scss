@@ -23,30 +23,47 @@
 
 	&__join {
 		display: flex;
+		gap: 1rem;
 	}
 	&__left {
 		flex-shrink: 2;
 	}
 	&__right {
+		flex: 1;
+		padding-right: 1rem;
+
+		& > p {
+			text-transform: uppercase;
+			color: $silver;
+			font-size: 0.75rem;
+		}
 	}
 	&__input {
-		@include comp;
 		border: $mercury 1px solid;
 		border-radius: 0.25rem;
 
 		box-sizing: border-box;
 		padding: 0.75rem;
-		margin-top: 0.25rem;
-		margin-bottom: 1rem;
+		margin-top: 0;
 		width: 100%;
 		max-width: 100%;
+		height: 6rem;
+
+		margin-bottom: 1rem;
+
+		resize: none;
 
 		@include tablet {
 			padding: 1rem;
+			margin-bottom: 0;
+			height: 3rem;
 		}
+	}
 
-		// &--error {
-		// 	border-color: $error;
-		// }
+	&__form {
+		@include tablet {
+			display: flex;
+			gap: 1rem;
+		}
 	}
 }

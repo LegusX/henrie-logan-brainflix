@@ -10,6 +10,7 @@
 	align-items: center;
 
 	min-height: 40px;
+	height: min-content;
 	width: 100%;
 
 	cursor: pointer;
@@ -19,7 +20,7 @@
 	@include tablet {
 		min-width: 150px;
 		width: fit-content;
-		padding: 0 32px;
+		padding: 4px 32px;
 	}
 
 	&__icon {

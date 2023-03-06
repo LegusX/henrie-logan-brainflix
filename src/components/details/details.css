@@ -55,6 +55,11 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .details__title {
+    padding: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .details__title {
     padding: 0;
   }
 }
@@ -74,6 +79,11 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .details__info {
+    padding: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .details__info {
     padding: 0;
   }
 }
@@ -81,6 +91,12 @@ p {
   .details__info {
     border-top: 0;
     padding: 0;
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .details__info {
+    margin: 0;
   }
 }
 .details__info > div {
@@ -149,6 +165,11 @@ p {
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) {
+  .details__desc {
+    padding: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
   .details__desc {
     padding: 0;
   }

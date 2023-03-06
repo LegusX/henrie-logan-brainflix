@@ -23,11 +23,13 @@ export default function Comments({ comments }) {
 				</div>
 				<div className="comments__right">
 					<p>Join the conversation</p>
-					<textarea
-						placeholder="Add a new comment"
-						className="comments__input"
-					/>
-					<Button icon={commentIcon}>Comment</Button>
+					<div className="comments__form">
+						<textarea
+							placeholder="Add a new comment"
+							className="comments__input"
+						/>
+						<Button icon={commentIcon}>Comment</Button>
+					</div>
 				</div>
 			</div>
 			<div className="comments__list">{commentComponents}</div>

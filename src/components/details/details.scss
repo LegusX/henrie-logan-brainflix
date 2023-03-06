@@ -20,6 +20,11 @@
 		@include tablet {
 			border-top: 0;
 			padding: 0;
+			margin: 0 2.25rem;
+		}
+
+		@include desktop {
+			margin: 0;
 		}
 
 		& > div {
