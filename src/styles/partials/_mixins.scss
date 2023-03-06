@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 @mixin tablet {
 	@media only screen and (min-width: 768px) {
 		@content;
@@ -49,5 +51,14 @@
 
 	@include tablet {
 		padding-bottom: 2.25rem;
+	}
+}
+
+@mixin placeholder {
+	&::placeholder {
+		color: $black;
+		opacity: 100%;
+		font-family: Avenir;
+		font-size: 1rem;
 	}
 }

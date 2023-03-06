@@ -107,6 +107,18 @@ p {
   margin-bottom: 1rem;
   resize: none;
 }
+.comments__input::-moz-placeholder {
+  color: #323232;
+  opacity: 100%;
+  font-family: Avenir;
+  font-size: 1rem;
+}
+.comments__input::placeholder {
+  color: #323232;
+  opacity: 100%;
+  font-family: Avenir;
+  font-size: 1rem;
+}
 @media only screen and (min-width: 768px) {
   .comments__input {
     padding: 1rem;

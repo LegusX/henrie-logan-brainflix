@@ -1,4 +1,5 @@
 .button {
+  color: white;
   background-color: #0095ff;
   border-radius: 4px;
   position: relative;
@@ -31,8 +32,11 @@
   transform: translate(50%, -50%);
 }
 .button__text {
-  color: white;
   text-transform: uppercase;
   margin: 0;
   font-weight: 600;
+}
+.button--inverted {
+  background-color: #fff;
+  color: #0095ff;
 }/*# sourceMappingURL=button.css.map */

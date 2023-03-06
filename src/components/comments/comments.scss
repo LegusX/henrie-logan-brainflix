@@ -41,6 +41,7 @@
 		}
 	}
 	&__input {
+		@include placeholder;
 		border: $mercury 1px solid;
 		border-radius: 0.25rem;
 

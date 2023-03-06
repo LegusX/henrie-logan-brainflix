@@ -3,9 +3,7 @@
 
 fix stupid black bar under video player
 fix wrong resolution on video player
-add upload page
 convert all px to rem
-find out why getting a warning about unique keys on the comments
 ---
 
 ## Going further

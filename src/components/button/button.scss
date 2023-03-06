@@ -2,6 +2,7 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .button {
+	color: white;
 	background-color: $blue;
 	border-radius: 4px;
 	position: relative;
@@ -32,9 +33,13 @@
 		transform: translate(50%, -50%);
 	}
 	&__text {
-		color: white;
 		text-transform: uppercase;
 		margin: 0;
 		font-weight: 600;
+	}
+	&--inverted {
+		background-color: $white;
+
+		color: $blue;
 	}
 }

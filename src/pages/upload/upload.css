@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+.upload {
+  padding: 0 1rem;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .upload {
+    padding: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .upload {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .upload {
+    margin: 0 1rem;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-width: 768px) {
+  .upload {
+    margin: 0 2.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-width: 1280px) {
+  .upload {
+    margin: 0 auto;
+    width: 64rem;
+  }
+}
+.upload__subtitle {
+  text-transform: uppercase;
+  color: #afafaf;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.upload__title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .upload__title {
+    margin-top: 3rem;
+    margin-bottom: 2.25rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .upload__title {
+    font-size: 2.5rem;
+  }
+}
+.upload__container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .upload__container {
+    padding-top: 1rem;
+    border-top: 1px solid #e1e1e1;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .upload__container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.upload__thumbnail {
+  width: 100%;
+  border-radius: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .upload__thumbnail {
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .upload__thumbnail {
+    max-width: 100%;
+  }
+}
+.upload__input {
+  border: #e1e1e1 1px solid;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  margin-top: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.upload__input::-moz-placeholder {
+  color: #323232;
+  opacity: 100%;
+  font-family: Avenir;
+  font-size: 1rem;
+}
+.upload__input::placeholder {
+  color: #323232;
+  opacity: 100%;
+  font-family: Avenir;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .upload__input {
+    padding: 1rem;
+    margin-bottom: 0;
+    height: 3rem;
+  }
+}
+.upload__textarea {
+  height: 6rem;
+  resize: none;
+}
+.upload__textarea::-moz-placeholder {
+  color: #323232;
+  opacity: 100%;
+  font-family: Avenir;
+  font-size: 1rem;
+}
+.upload__textarea::placeholder {
+  color: #323232;
+  opacity: 100%;
+  font-family: Avenir;
+  font-size: 1rem;
+}
+.upload__actions {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .upload__actions {
+    flex-direction: row-reverse;
+    justify-content: right;
+  }
+}
+.upload__right {
+  flex: 9;
+}
+.upload__left {
+  flex: 5;
+}/*# sourceMappingURL=upload.css.map */
