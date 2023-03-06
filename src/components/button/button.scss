@@ -4,13 +4,13 @@
 .button {
 	color: white;
 	background-color: $blue;
-	border-radius: 4px;
+	border-radius: 0.25rem;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	min-height: 40px;
+	min-height: 2.5rem;
 	height: min-content;
 	width: 100%;
 
@@ -19,14 +19,14 @@
 		background-color: $darkblue;
 	}
 	@include tablet {
-		min-width: 150px;
+		min-width: 9rem;
 		width: fit-content;
-		padding: 4px 32px;
+		padding: 0.25rem 2rem;
 	}
 
 	&__icon {
-		width: 24px;
-		height: 24px;
+		width: 1.5rem;
+		height: 1.5rem;
 		position: absolute;
 		left: 0;
 		top: 50%;
