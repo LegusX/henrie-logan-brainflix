@@ -24,6 +24,8 @@
 	&__join {
 		display: flex;
 		gap: 1rem;
+		border-bottom: 1px solid $mercury;
+		padding-bottom: 1rem;
 	}
 	&__left {
 		flex-shrink: 2;

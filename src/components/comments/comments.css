@@ -80,6 +80,8 @@ p {
 .comments__join {
   display: flex;
   gap: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 1rem;
 }
 .comments__left {
   flex-shrink: 2;
