@@ -14,7 +14,7 @@ function Nav() {
 		<nav className="nav">
 			<div className="nav__logo">
 				<Link to={"/"}>
-					<img src={Logo}></img>
+					<img src={Logo} alt="BrainStation Logo"></img>
 				</Link>
 			</div>
 			<div className="nav__right">

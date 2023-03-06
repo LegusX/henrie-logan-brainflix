@@ -1,6 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { getVideos } from "./api";
-import { useState, useEffect } from "react";
 
 import "./App.scss";
 import Nav from "./components/nav/nav.js";

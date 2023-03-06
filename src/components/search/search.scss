@@ -2,16 +2,16 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .search {
-	min-height: 40px;
+	min-height: 2.5rem;
 
-	border-radius: 4px;
+	border-radius: 0.25rem;
 	border: 1px solid $mercury;
-	padding: 0 12px;
+	padding: 0 0.75rem;
 
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	gap: 16px;
+	gap: 1rem;
 
 	@include tablet {
 		width: 20vw;
