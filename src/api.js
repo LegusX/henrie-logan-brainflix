@@ -1,11 +1,7 @@
 import axios from "axios";
 
-const KEY = "9d7c83f8-ea0f-400b-8dd3-655bb156cd43";
-const BASEURL = "https://project-2-api.herokuapp.com";
+const BASEURL = "localhost:8080";
 const CONFIG = {
-	params: {
-		api_key: KEY,
-	},
 	headers: {
 		"Content-Type": "application/json",
 	},
@@ -30,4 +26,8 @@ export async function getDetails(id) {
 	} catch (e) {
 		console.error("Failed to GET video details.");
 	}
+}
+
+export async function uploadVideo(video) {
+	return;
 }
