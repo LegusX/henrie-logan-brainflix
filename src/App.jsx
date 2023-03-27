@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.scss";
-import Nav from "./components/nav/nav.js";
-import VideoPage from "./pages/video/videopage.js";
-import Upload from "./pages/upload/upload.js";
+import Nav from "./components/nav/nav.jsx";
+import VideoPage from "./pages/video/videopage.jsx";
+import Upload from "./pages/upload/upload.jsx";
 
 function App() {
 	return (
