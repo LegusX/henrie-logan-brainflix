@@ -39,4 +39,7 @@
 .button--inverted {
   background-color: #fff;
   color: #0095ff;
+}
+.button--inverted:hover {
+  color: #fff;
 }/*# sourceMappingURL=button.css.map */
