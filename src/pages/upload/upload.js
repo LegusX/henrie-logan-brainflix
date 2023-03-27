@@ -6,6 +6,7 @@ import Button from "../../components/button/button";
 import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import { uploadVideo } from "../../api";
+import axios from "axios";
 
 export default function Upload() {
 	const navigate = useNavigate();
@@ -28,6 +29,13 @@ export default function Upload() {
 		if (videoDescription.current.value.length > 0)
 			data.append("description", videoDescription.current.value);
 		else return alert("You need to add a title!");
+
+		//use randomuser.me to generate a random channel name
+		const { data: person } = await axios.get(
+			"https://randomuser.me/api/?inc=name&nat=us,gb"
+		);
+		const channel = `${person.results[0].name.first} ${person.results[0].name.last}`;
+		data.append("channel", channel);
 
 		const id = await uploadVideo(data);
 
