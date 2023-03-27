@@ -33,10 +33,10 @@ export async function getDetails(id) {
 export async function uploadVideo(data) {
 	try {
 		//upload video and return the id of the new video
-		const { id } = await axios.post(BASEURL + "/videos", data, {
+		const res = await axios.post(BASEURL + "/videos", data, {
 			headers: { "Content-Type": "multipart/form-data" },
 		});
-		return id;
+		return res.data;
 	} catch (e) {
 		console.error("Failed to POST video");
 		console.error(e);

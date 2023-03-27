@@ -39,7 +39,6 @@ export default function Upload() {
 
 		const id = await uploadVideo(data);
 
-		console.log(data);
 		alert("Video Published!");
 		navigate("/videos/" + id);
 	}
