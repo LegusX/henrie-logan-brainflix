@@ -3,7 +3,7 @@ import "./comment.scss";
 export default function Comment({ comment }) {
 	const time = new Date(comment.timestamp).toLocaleDateString();
 	return (
-		<div className="comment" key={comment.id} data-id={comment.id}>
+		<div className="comment" data-id={comment.id}>
 			<div className="comment__img"></div>
 			<div className="comment__inner">
 				<div className="comment__info">

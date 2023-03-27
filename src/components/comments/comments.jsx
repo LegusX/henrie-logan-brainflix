@@ -5,11 +5,10 @@ import "./comments.scss";
 import commentIcon from "../../assets/icons/add_comment.svg";
 
 export default function Comments({ comments }) {
-	console.log(comments);
-	if (typeof comments === "undefined") return <div>Loading...</div>;
+	if (comments === undefined) return <div>Loading...</div>;
 
 	const commentComponents = comments.map((comment) => (
-		<Comment comment={comment} />
+		<Comment comment={comment} key={comment.id} />
 	));
 
 	return (
