@@ -194,4 +194,7 @@ p {
 }
 .upload__left {
   flex: 5;
+}
+.upload__file {
+  display: none;
 }/*# sourceMappingURL=upload.css.map */
