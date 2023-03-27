@@ -50,6 +50,10 @@
 		@include desktop {
 			max-width: 100%;
 		}
+
+		&--hidden {
+			display: none;
+		}
 	}
 	&__input {
 		@include placeholder;
@@ -94,5 +98,10 @@
 	}
 	&__file {
 		display: none;
+	}
+	&__fileDiv {
+		&--hidden {
+			display: none;
+		}
 	}
 }

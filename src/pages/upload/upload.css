@@ -132,6 +132,9 @@ p {
     max-width: 100%;
   }
 }
+.upload__thumbnail--hidden {
+  display: none;
+}
 .upload__input {
   border: #e1e1e1 1px solid;
   border-radius: 0.25rem;
@@ -196,5 +199,8 @@ p {
   flex: 5;
 }
 .upload__file {
+  display: none;
+}
+.upload__fileDiv--hidden {
   display: none;
 }/*# sourceMappingURL=upload.css.map */
